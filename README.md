@@ -14,33 +14,8 @@ The pipeline pulls code from GitHub, builds a Docker image, and deploys a contai
 
 ---
 
-📦 DevOps-Task
-├── 📂 src/                     # Application source code
-│   └── app.js                  # Express server entry point
-│
-├── 📂 public/                   # Static assets (images, logos, etc.)
-│   └── logoswayatt.png
-│
-├── 📂 config/                   # Configurations (optional, scalable apps)
-│   └── default.json             # Example: environment configs
-│
-├── 📂 scripts/                  # Deployment & helper scripts
-│   └── start.sh                 # Script to run container / service
-│
-├── Dockerfile                   # Docker build instructions
-├── Jenkinsfile                  # (Optional) Declarative Jenkins pipeline
-├── package.json                 # Node.js dependencies
-├── package-lock.json            # Dependency lock file
-├── README.md                    # Documentation
-└── .gitignore                   # Git ignore file
-
-
-
----
-
 ## ⚙️ Jenkins Pipeline
 1. **Source Code Management**  
-   - Repo: [DevOps Task GitHub Repo](https://github.com/sazamansari/DevOps-Task)  
    - Branch: `main`
 
 2. **Build Step (Execute Shell)**  
