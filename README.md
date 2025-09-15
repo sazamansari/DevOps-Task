@@ -152,6 +152,34 @@ describe('smoke', () => {
 * Add monitoring (Prometheus/Grafana).
 * Enable HPA if deployed on Kubernetes.
 
+📊 AWS CloudWatch Monitoring
+
+To monitor application health and infrastructure performance, AWS CloudWatch Dashboards are configured for the EC2 instance running the containerized app.
+
+Key metrics being tracked:
+![App Screenshot](https://github.com/sazamansari/DevOps-Task/blob/main/image/8.png)
+![App Screenshot](https://github.com/sazamansari/DevOps-Task/blob/main/image/9.png)
+![App Screenshot](https://github.com/sazamansari/DevOps-Task/blob/main/image/10.png)
+
+CPU Utilization – average % usage over time.
+
+Disk I/O – read/write bytes & operations.
+
+Network Traffic – inbound/outbound traffic, packets in/out.
+
+Status Checks – instance & system health status.
+
+Dashboard Views
+CPU Utilization
+
+Network In / Out
+
+Disk Operations
+
+Instance Status
+
+✅ These dashboards provide real-time observability into the system, helping catch performance bottlenecks early and ensuring smooth CI/CD deployments.
+
 ---
 
 ✅ With this setup, you now have a **complete, production-style DevOps pipeline** that runs end-to-end.
