@@ -16,7 +16,7 @@ The pipeline pulls code from GitHub, builds a Docker image, and deploys a contai
 
 ## 📂 Project Structure
 
-.
+
 ├── app.js # Sample Node.js app (Express server)
 ├── Dockerfile # Docker instructions to build image
 ├── package.json # Node.js dependencies
