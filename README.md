@@ -106,6 +106,8 @@ The pipeline is fully automated via **Jenkinsfile**:
 * Configure credentials for GitHub & Docker registry.
 * Add Webhook in GitHub → `http://<JENKINS_HOST>:8080/github-webhook/`.
 
+![App Screenshot](https://github.com/sazamansari/DevOps-Task/blob/main/image/1.png)
+
 ---
 
 ## 🌐 Deployment
