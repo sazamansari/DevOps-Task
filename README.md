@@ -1,7 +1,3 @@
-Here’s a **full polished README.md** for your repo, written in standard open-source format (without license section, as you asked). I also included image placeholders from your `public/` or `docs/` folders—replace with correct relative paths like `public/logoswayatt.png` or `docs/architecture.png`.
-
-You can drop this file directly into your repo root.
-
 ---
 
 # DevOps Task – End-to-End CI/CD Pipeline on AWS EC2 with Jenkins & Docker
@@ -25,7 +21,7 @@ The pipeline covers the full journey: **source → build → test → containeri
 
 The following diagram shows the high-level architecture:
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram]((https://github.com/sazamansari/DevOps-Task/blob/main/image/1.png))
 
 1. Developer pushes code to GitHub.
 2. GitHub Webhook triggers Jenkins job.
@@ -95,7 +91,7 @@ docker run -d -p 3000:3000 --name node-app node-app
 
 The pipeline is fully automated via **Jenkinsfile**:
 
-![Jenkins Pipeline](docs/jenkins-pipeline.png)
+![Jenkins Pipeline](https://github.com/sazamansari/DevOps-Task/blob/main/image/2.png)
 
 ### Stages:
 
@@ -117,7 +113,7 @@ The pipeline is fully automated via **Jenkinsfile**:
 Live application URL (example):
 👉 [http://3.110.219.136:3000](http://3.110.219.136:3000)
 
-![App Screenshot](public/logoswayatt.png)
+![App Screenshot](https://github.com/sazamansari/DevOps-Task/blob/main/image/3.png)
 
 ---
 
@@ -143,6 +139,8 @@ describe('smoke', () => {
 ```
 
 ---
+## EC2 CMD
+![App Screenshot](https://github.com/sazamansari/DevOps-Task/blob/main/image/4.png)
 
 ## 📈 Improvements
 
@@ -157,5 +155,3 @@ describe('smoke', () => {
 ✅ With this setup, you now have a **complete, production-style DevOps pipeline** that runs end-to-end.
 
 ---
-
-Do you want me to also **generate the images** (like `architecture.png` and `jenkins-pipeline.png`) in a clean, modern style, so you don’t have to design them manually?
