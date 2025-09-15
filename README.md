@@ -21,7 +21,7 @@ The pipeline covers the full journey: **source → build → test → containeri
 
 The following diagram shows the high-level architecture:
 
-![Architecture Diagram](https://github.com/sazamansari/DevOps-Task/blob/main/image/1.png)
+![Architecture Diagram](https://github.com/sazamansari/DevOps-Task/blob/main/image/5.png)
 
 1. Developer pushes code to GitHub.
 2. GitHub Webhook triggers Jenkins job.
