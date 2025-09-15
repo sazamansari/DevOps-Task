@@ -1,6 +1,14 @@
+# deepdocs.yml
 target:
   - url: "docs/"
 
-include:  []
+include:
+  - src/
+  - public/
+  - config/
+  - scripts/
+  - Dockerfile
+  - Jenkinsfile
+  - README.md
 
-reinit: "a-random-string"
+reinit: "devops-task-ci-cd-docs"
