@@ -2,7 +2,52 @@
 
 # DevOps Task – End-to-End CI/CD Pipeline on AWS EC2 with Jenkins & Docker
 
-![Pipeline Architecture](docs/architecture.png)
+![Pipeline Architecture](https://github.com/sazamansari/DevOps-Task/blob/main/image/CI-CD-Pipeline.jpg)
+                        +----------------+
+                        |  GitHub Repo   |
+                        | DevOps-Task    |
+                        +--------+-------+
+                                 |
+                     (push / PR trigger via webhook)
+                                 |
+                        +--------v--------+
+                        |   Jenkins CI     |
+                        +--------+---------+
+                                 |
+              +------------------+------------------+
+              |                                     |
+      (Build / Dockerize)                  (Static Code / Lint / Test)
+              |                                     |
+   +----------v----------+              +-----------v----------+
+   |  Build Docker Image |              |  Run Unit / Integration |
+   |  (logo-server)      |              |  Tests, Lint, Filters   |
+   +----------+----------+              +-----------+-------------+
+              |                                     |
+              +------------------+------------------+
+                                 |
+                         (push to container registry)
+                                 |
+               +-----------------v------------------+
+               |   DockerHub  / AWS ECR / GCP AR     |
+               +-----------------+------------------+
+                                 |
+                        +--------v--------+
+                        |   Deployment     |
+                        |  (Cloud Run /    |
+                        |   ECS / GKE)     |
+                        +--------+---------+
+                                 |
+                         +-------v--------+
+                         |  Staging / QA   |
+                         |  environment    |
+                         +-------+---------+
+                                 |
+                      (smoke tests / approval)
+                                 |
+                         +-------v--------+
+                         |  Production     |
+                         |  Deployment     |
+                         +----------------+
 
 ## 📖 Overview
 
