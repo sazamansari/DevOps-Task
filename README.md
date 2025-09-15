@@ -14,15 +14,26 @@ The pipeline pulls code from GitHub, builds a Docker image, and deploys a contai
 
 ---
 
-## 📂 Project Structure
+📦 DevOps-Task
+├── 📂 src/                     # Application source code
+│   └── app.js                  # Express server entry point
+│
+├── 📂 public/                   # Static assets (images, logos, etc.)
+│   └── logoswayatt.png
+│
+├── 📂 config/                   # Configurations (optional, scalable apps)
+│   └── default.json             # Example: environment configs
+│
+├── 📂 scripts/                  # Deployment & helper scripts
+│   └── start.sh                 # Script to run container / service
+│
+├── Dockerfile                   # Docker build instructions
+├── Jenkinsfile                  # (Optional) Declarative Jenkins pipeline
+├── package.json                 # Node.js dependencies
+├── package-lock.json            # Dependency lock file
+├── README.md                    # Documentation
+└── .gitignore                   # Git ignore file
 
-
-├── app.js # Sample Node.js app (Express server)
-├── Dockerfile # Docker instructions to build image
-├── package.json # Node.js dependencies
-├── package-lock.json # Dependency lock file
-├── README.md # Project documentation
-└── logoswayatt.png # Static file used in app
 
 
 ---
